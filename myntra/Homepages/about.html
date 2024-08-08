@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Women - Shop For Women Clothes, Shoes, Bags & More</title>
+    <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
+    <link rel="stylesheet" href="../Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    /* Style for the Preference section */
+    .form-group label {
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .form-group textarea {
+        width: 70%;
+        height: 200px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        color: #333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s;
+    }
+
+    .form-group textarea:focus {
+        border-color: #ff3f6c;
+        outline: none;
+    }
+
+    .btn-default {
+        background-color: #ff3f6c;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    .btn-default:hover {
+        background-color: #e63950;
+    }
+</style>
+<body>
+   
+    <!-- MENU BAR -->
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="../Homepages/whatsTrending.html">What's Trending</a></li>
+            <li><a href="../Homepages/about.html">About You</a></li>
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="../Profile/profile.html" class="dropList">login</a>
+                  <a href="../Profile/signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+
+                <!-- TOGGLE MENU -->
+                <div id="toggle">
+                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="top">
+                            <a href="menHomePage.html">men</a>
+                            <a href="womenHomePage.html">women</a>
+                            <a href="#">kids</a>
+                            <a href="homeLiving.html">home & living</a>
+                            <a href="#">beauty</a>
+                            <a href="#">studio</a>
+                        </div> 
+                        <div class="bottom">
+                            <i class="fa-regular fa-user fa_user" id="profile"></i>
+                            <i class="fa-regular fa-heart fa_wishlist"></i>
+                            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                        </div>           
+                    </div>
+                </div>
+
+    </header>
+
+    <!-- Contents--->
+    <h1 class="brand_heading"></h1>
+    <form action="#" style="margin-left: 100px;">
+        <div class="form-group">
+            <label for="email" style="font-size: 18px; font-family: 'Arial', sans-serif; font-weight: bold; color: #F05524;">Your Shopping Preferences:</label> <br>
+            <textarea style="width: 70%; height: 200px; font-family: 'Arial', sans-serif; font-size: 16px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+        </div>
+       
+        <button type="submit" class="btn btn-default" style="background-color: #F05524; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">Submit</button>
+    </form>
+    
+
+    <script src="../Common Files/women.js"></script>
+    <script src="../Common Files/headerMenu.js"></script>
+    <script src="../Common Files/corousel.js"></script>
+    <script src="../Common Files/hyperlinks.js"></script>
+    
+
+</body>
+
+
+</html>

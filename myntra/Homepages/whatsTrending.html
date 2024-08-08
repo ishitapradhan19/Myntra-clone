@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Women - Shop For Women Clothes, Shoes, Bags & More</title>
+    <link rel="shortcut icon" type="image/png" href="../Common Files/image/favicon.png">
+    <link rel="stylesheet" href="../Common Files/style.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Container for products */
+        #topBrand_women {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        /* Styling for product card */
+        .product-card {
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Styling for product images */
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for product details */
+        .product-details {
+            font-size: 1.5rem;
+        }
+
+        /* Brand name style */
+        .product-details .brand-name {
+            font-weight: bold;
+        }
+
+        /* Product description style */
+        .product-details .product-description {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        /* Price container style */
+        .price-container {
+            margin: 5px 0;
+        }
+
+        /* Striked price style */
+        .striked-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        /* Discounted price style */
+        .discounted-price {
+            color: #F05524;
+            font-weight: bold;
+        }
+
+        /* Discount percent style */
+        .discount-percent {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #F05524;
+        }
+
+        footer img {
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer div {
+            display: flex;
+            align-items: center;
+        }
+
+        footer .social-icons i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- MENU BAR -->
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="../Homepages/whatsTrending.html">What's Trending</a></li>
+            <li><a href="../Homepages/about.html">About You</a></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="menHomePage.html">men</a>
+                    <a href="womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP BRANDS DISPLAY 1 HEADING -->
+    <h1 class="brand_heading">#streetStyle</h1>
+<div id="topBrand_women" class="container">
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/mqzghfcskzbxhxfi50m4y/image-480x530.jpg?rlkey=l5ffdxdd6ttrtqepp5p90sngb&st=8n7gbrdb&dl=1" alt="brand1">
+        <div class="product-details">
+            <span class="brand-name">Leather Retail</span>
+            <div class="product-description">Black Leather Jacket</div>
+            <div class="price-container">
+                <span class="striked-price">₹1200</span>
+                <span class="discounted-price">₹600</span>
+                <span class="discount-percent">(50% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/mv0ktdmpp458xazlegmqf/image-480x530-1.jpg?rlkey=ye1cw93e01jhwtm6y58suw8o4&st=wowu3qdj&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Roadster Life Co</span>
+            <div class="product-description">Graphic Printed T-shirt</div>
+            <div class="price-container">
+                <span class="striked-price">₹1200</span>
+                <span class="discounted-price">₹480</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/0yswbqf8grggse7t0crgw/image-480x530-2.jpg?rlkey=457wdyetn5rwrv39jpzkpx3tk&st=req9omey&dl=1" alt="brand3">
+        <div class="product-details">
+            <span class="brand-name">SHOWOFF</span>
+            <div class="product-description">Windcheater biker jacket</div>
+            <div class="price-container">
+                <span class="striked-price">₹1800</span>
+                <span class="discounted-price">₹720</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/23j3x4ruk6m3t3wp2mkp8/image-480x530-3.jpg?rlkey=wk7j6u66sq6oha5v0sg1kcf6t&st=99mf08tc&dl=1" alt="brand4">
+        <div class="product-details">
+            <span class="brand-name">BAESD</span>
+            <div class="product-description">Women relaxed straight leather pants</div>
+            <div class="price-container">
+                <span class="striked-price">₹2200</span>
+                <span class="discounted-price">₹660</span>
+                <span class="discount-percent">(70% OFF)</span>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+
+<h1 class="brand_heading">#comfychic</h1>
+<div id="topBrand_women" class="container">
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/fx9l6hd6d8jlkhdpmqqit/image-480x530-10.jpg?rlkey=0px1ctwzk0voo2384ih08yzdq&st=4jrlyubs&dl=1" alt="brand1">
+        <div class="product-details">
+            <span class="brand-name">Vero Moda</span>
+            <div class="product-description">Pure Cotton Co-ords</div>
+            <div class="price-container">
+                <span class="striked-price">₹1500</span>
+                <span class="discounted-price">₹600</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div> 
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/y6vi9h2c03ta9o1tkb35d/image-480x530-21.jpg?rlkey=kxdku4xj5l9foxy2ksqa7cex5&st=oxmcv5jz&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">URB_N</span>
+            <div class="product-description">Women Chino Shorts</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹700</span>
+                <span class="discount-percent">(65% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/co2db0r9oe5prjovm77v2/image-480x530-13.jpg?rlkey=27r6r7oq2r2dktctn0qtdfz8s&st=rnjma3l1&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Roadster Life Co</span>
+            <div class="product-description">Women Typography Printed Co-Ords</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/ge5f3tpomn8t76n6x3nyi/image-480x530-8.jpg?rlkey=etguj0usqhmggr5u0wk3o4aeg&st=xzkl5do5&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Rare Rabbit</span>
+            <div class="product-description">Mens Brown Sweater</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="brand_heading">#retrostyle</h1>
+<div id="topBrand_women" class="container">
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/co2db0r9oe5prjovm77v2/image-480x530-13.jpg?rlkey=27r6r7oq2r2dktctn0qtdfz8s&st=uvx4d68w&dl=1" alt="brand1">
+        <div class="product-details">
+            <span class="brand-name">LULU & SKY</span>
+            <div class="product-description">Striped Retro Style Top With Flared Trousers </div>
+            <div class="price-container">
+                <span class="striked-price">₹1500</span>
+                <span class="discounted-price">₹600</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div> 
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/ho1i27nmkxu00bkek53ae/image-480x530-12.jpg?rlkey=xzo8tpvmnvcj8r7yj0z3pg15n&st=k0jih5ja&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Stylecast</span>
+            <div class="product-description">Ruffled V-neck Long Sleeve Top</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹700</span>
+                <span class="discount-percent">(65% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/4rk1rg024abi0ensnf5mt/image-480x530-22.jpg?rlkey=0g9nqsgaeke189miqucatfv2x&st=1d1ireqg&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">LULU & SKY</span>
+            <div class="product-description">Patterned Maxi Skirt</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/bf3er85ir5qfqg6lcey5u/image-480x530-15.jpg?rlkey=hvxf1ven0oqp7gfk1dc4qwyfu&st=4tpn2km8&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">FREAKINS</span>
+            <div class="product-description">Retro Style Zipper Up Casual Jacket</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 class="brand_heading">#dottedfashion</h1>
+<div id="topBrand_women" class="container">
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/0yt4vslsf64gheyrzfkvw/image-480x530-16.jpg?rlkey=t6ybo8yhag8zfot2gjjrp2uor&st=3t7i1yho&dl=1" alt="brand1">
+        <div class="product-details">
+            <span class="brand-name">DressBerry</span>
+            <div class="product-description">Women Stylish Black Polka-Dotted Dress</div>
+            <div class="price-container">
+                <span class="striked-price">₹1500</span>
+                <span class="discounted-price">₹600</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div> 
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/rmlfthbzz4w9emjxb1aix/image-480x530-18.jpg?rlkey=6lnc63ieenlld38hpdp7iww0n&st=lpks3jie&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">DODO & MOA</span>
+            <div class="product-description">Black Polka Dot Fit & Flared Dress</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹700</span>
+                <span class="discount-percent">(65% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/cxc2ej0w8cfhpcn8z0442/image-480x530-23.jpg?rlkey=io0escnribybjwdnsgxtgsl3j&st=nki7w5vo&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Max Fashion</span>
+            <div class="product-description">Women Polka Dot Printed Shirt</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="https://www.dropbox.com/scl/fi/qwzh8js6l7h3d7elt7f11/image-480x530-20.jpg?rlkey=1w5aju9kr7uw3jegz7vz9o59d&st=hogi61hb&dl=1" alt="brand2">
+        <div class="product-details">
+            <span class="brand-name">Rare Rabbit</span>
+            <div class="product-description">Mens Pucks Turq Viscose Fabric Full Sleeves Shirt</div>
+            <div class="price-container">
+                <span class="striked-price">₹2000</span>
+                <span class="discounted-price">₹800</span>
+                <span class="discount-percent">(60% OFF)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+         
+          <!-- FOOTER SECTION -->
+          <footer>
+              
+              <section id="section_2">
+                  <h4>popular searches</h4>
+                  <div></div>
+              </section>
+              <section id="section_3">
+                <a href="">sherwani</a><a href="">track pants</a><a href="">blazzers</a><a href="">sweater</a><a href="">jeans</a><a href="">suit</a><a href="">trouser</a><a href="">shalwar</a><a href="">bracelets</a><a href="">sherwani</a><a href="">cargo</a><a href="">shirt</a><a href="">sherwani</a><a href="">shelwar</a><a href="">Bracelets</a><a href="">sherwani</a><a href="">blazzers</a><a href="">sherwani</a><a href="">bracelets</a><a href="">rings</a><a href="">blazzers</a><a href="">sherwani</a><a href="">sherwani</a><a href="">sherwani</a><a href="">blazzers</a><a href="">blazzers</a><a href="">blazzers</a><a href="">shelwar</a><a href="">shalwar</a><a href="">jeans</a>
+              </section>
+              <section id="section_4">
+                  <p>In case of any concern <a href="#"> contact us</a></p>
+                  <p>&#169; 2024 www.myntra.com. All rights reserved.</p>
+              </section>
+              <hr>
+             <section id="section_5">
+                 <h4>online shopping for women: myntra all the way</h4>
+                 <p>Myntra is one of the best sites when it comes to online shopping for men. The finest of material, superior design and unbeatable style go into the making of our men’s shopping collection. Our range of online shopping men’s wear, accessories, footwear and personal care products are second to none. Compared with other men’s shopping sites, Myntra brings you the best price products which won’t hurt your pocket. With seasonal discounts on trendy casual wear, suits, blazers, sneakers and more, online shopping for men at Myntra just gets even more irresistible!
+                </p>
+             </section>
+             <section id="section_6">
+                 <h4>women’s online shopping: clothes, accessories, footwear, and more</h4>
+                 <p>At Myntra, our online shopping fashion for men collection features plenty of options to create multiple outfits. At our men’s online shop we have brought together an exhaustive range of products from the best men’s brands. Here is a list of must-haves from the wide variety of awesome products at Myntra:</p>
+                 <div>
+                 <ol>
+                     <li>Opt for a charming yet laid-back look with cool T-shirts and casual shirts worn with stylish jeans, casual trousers or shorts. Stay sharp and sophisticated with our smart options in formal shirts and trousers. Look dapper when meeting your clients in our smooth suits. Put on trendy blazers for formal occasions. On your online men’s clothes’ shopping journey, make sure you include kurtas, jackets and sherwanis from our festive wear collection. Stay warm and comfortable in sweaters and sweatshirts. Get fit and ready for adventure, with our sports and active wear collection.</li>
+                     <li>Once you are done with your online men’s clothes’ shopping, make sure you pick up the right accessories to complement your look. Whether you are travelling to work or outside the city our wide variety of bags, backpacks and luggage collection will ensure you are well-packed. Our beautiful watches and smart watches work well to enhance your overall style quotient. Reach out for our sunglasses during the summers – let your eyes stay protected while you opt for maximum swag.
+                    </li>
+                     <li>Bring impeccable style to your shoe closet with our incredible collection of footwear for men. Look classy during formal and semi-formal occasions with derbies, loafers and oxfords. Stay hip and happening in parties with boat shoes, monks and brogues from our casual men’s footwear range. Lead an active lifestyle with sneakers and running shoes from our sports footwear selection. Pick up sandals, floaters and flip-flops for a trip to the beach. We also host socks in our men’s online shopping collection. That’s basically everything under one roof!</li>
+                 </ol>
+                </div>
+                 <p>Make sure you check out fun printed men’s T-shirts featuring your favourite characters from DC Comics and Marvel studios. Relive the magic of your favourite superhero from Justice League. Fly high with Superman, battle the bad guys with Batman, or get trendy in lightning-speed with a Flash T-shirt. Grab our cool Marvel Avengers T-shirts. Stay powered up with the Iron Man, or walk with the warriors in a Thor T-shirt.</p>
+                 <p>Our online shopping fashion for mens collection includes even more amazing merchandise such as innerwear, sleepwear, track pants, personal care, wallets, belts and other fashion accessories.</p>
+             </section>
+             <section id="section_6">
+                 <h4>online shopping for women made easy</h4>
+                 <p>Myntra is the most convenient men’s online store, what with our simplified shopping and payment procedures. With just a few clicks of the mouse or taps on your smartphone, you can buy your favorites from the best men’s brands right away.</p>
+             </section>
+          </footer>
+
+
+    <script src="../Common Files/women.js"></script>
+    <script src="../Common Files/headerMenu.js"></script>
+    <script src="../Common Files/corousel.js"></script>
+    <script src="../Common Files/hyperlinks.js"></script>
+    
+
+</body>
+
+
+</html>
